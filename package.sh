@@ -2,7 +2,7 @@
 set -ux
 
 CHROOT="arch-chroot /mnt"
-$CHROOT pacman -S python3 python-pip neovim alacritty git tmux
+$CHROOT pacman -S python3 python-pip neovim alacritty git tmux zsh vim go
 
 # desktop
 $CHROOT pacman -S xorg-server xorg-server-utils xorg-xinit
