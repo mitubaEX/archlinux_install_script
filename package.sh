@@ -23,6 +23,13 @@ $CHROOT echo export 'XMODIFIERS="@im=fcitx"' >> $HOME/.xprofile
 
 $CHROOT pacman -S firefox
 
+$CHROOT pacman -Sy --noconfirm git base-devel
+$CHROOT git clone https://aur.archlinux.org/google-chrome.git
+$CHROOT cd google-chrome
+$CHROOT makepkg -s --noconfirm
+$CHROOT pacman -U --noconfirm google-chrome-*.pkg.tar.xz
+$CHROOT pacman -Sy --noconfirm ttf-sazanami
+
 $CHROOT echo "---------"
 $CHROOT echo "finished."
 $CHROOT echo "---------"
