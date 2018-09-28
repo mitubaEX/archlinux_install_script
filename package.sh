@@ -5,7 +5,7 @@ CHROOT="arch-chroot /mnt"
 $CHROOT pacman -S python3 python-pip neovim alacritty git tmux zsh vim go
 
 # desktop
-$CHROOT pacman -S xorg-server xorg-server-utils xorg-xinit
+$CHROOT pacman -S xorg-server xorg-apps xorg-xinit
 $CHROOT pacman -S mesa
 $CHROOT pacman -S xf86-video-intel
 $CHROOT pacman -S xf86-input-synaptics
@@ -18,8 +18,8 @@ $CHROOT pacman -S otf-ipafont
 $CHROOT pacman -S fcitx-im fcitx-configtool fcitx-mozc
 
 $CHROOT echo "export GTK_IM_MODULE=fcitx" > $HOME/.xprofile
-$CHROOT echo export 'QT_IM_MODULE=fcitx' >> $HOME/.xprofile
-$CHROOT echo export 'XMODIFIERS="@im=fcitx"' >> $HOME/.xprofile
+$CHROOT echo "export QT_IM_MODULE=fcitx" >> $HOME/.xprofile
+$CHROOT echo 'export XMODIFIERS="@im=fcitx"' >> $HOME/.xprofile
 
 $CHROOT pacman -S firefox
 
