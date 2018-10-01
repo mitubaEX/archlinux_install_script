@@ -1,6 +1,6 @@
 # archlinux_install_script
 
-## install procedure
+## Install procedure
 
 ```sh
 # install core
@@ -33,4 +33,12 @@ netctl enable <your network profile>
 reboot
 
 # Login your other user and enjoy!
+```
+
+## After useradd, install configuration file
+
+```
+sh after_useradd.sh
+
+# Please install dotfiles
 ```
