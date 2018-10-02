@@ -1,7 +1,7 @@
 #!/bin/sh
 set -ux
 
-sudo pacman -S python3 python-pip neovim alacritty git tmux zsh vim go i3 feh compton fzf gnome-keyring dmenu
+sudo pacman -S python3 python-pip neovim alacritty git tmux zsh vim go i3 feh compton fzf gnome-keyring dmenu pulseaudio pavucontrol xfce4-pulseaudio-plugin pamixer
 
 # desktop
 sudo pacman -S xorg-server xorg-apps xorg-xinit mesa xf86-video-intel xf86-input-synaptics xfce4 xfce4-goodies lightdm lightdm-gtk-greeter
