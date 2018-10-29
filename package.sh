@@ -1,13 +1,11 @@
 #!/bin/sh
 set -ux
 
-sudo pacman -S python3 python-pip neovim alacritty git tmux zsh vim go i3 feh compton fzf gnome-keyring dmenu pulseaudio pavucontrol xfce4-pulseaudio-plugin pamixer evince texlive-langjapanese texlive-most ghostscript evince poppler-data exa rofi blueberry jdk8-openjdk chromium libgnome-keyring
+sudo pacman -S python3 python-pip neovim alacritty git tmux zsh vim go i3 feh compton fzf gnome-keyring dmenu pulseaudio pavucontrol xfce4-pulseaudio-plugin pamixer evince texlive-langjapanese texlive-most ghostscript evince poppler-data exa rofi blueberry jdk8-openjdk chromium libgnome-keyring fcitx-im fcitx-configtool fcitx-mozc otf-ipafont
 
 # desktop
 sudo pacman -S xorg-server xorg-apps xorg-xinit mesa xf86-video-intel xf86-input-synaptics xfce4 xfce4-goodies lightdm lightdm-gtk-greeter
 sudo systemctl enable lightdm.service
-
-sudo pacman -S otf-ipafont fcitx-im fcitx-configtool fcitx-mozc
 
 sudo echo "export GTK_IM_MODULE=fcitx" > $HOME/.xprofile
 sudo echo "export QT_IM_MODULE=fcitx" >> $HOME/.xprofile

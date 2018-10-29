@@ -45,3 +45,9 @@ sh ./installer.sh ~/.cache/dein/. ; rm ./installer.sh
 if [ "$(uname)" = "Linux" ]; then
   git config --global credential.helper /usr/lib/git-core/git-credential-gnome-keyring
 fi
+
+# jp
+sudo echo 'Section "InputClass"' > /etc/X11/xorg.conf.d/10-keyboard.conf
+sudo echo 'Identifier "Keyboard Defaults"' > /etc/X11/xorg.conf.d/10-keyboard.conf
+sudo echo 'MatchIsKeyboard "yes"' > /etc/X11/xorg.conf.d/10-keyboard.conf
+sudo echo 'EndSection' > /etc/X11/xorg.conf.d/10-keyboard.conf
