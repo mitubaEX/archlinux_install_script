@@ -40,5 +40,7 @@ reboot
 ```
 sh after_useradd.sh
 
+sh install_yaourt.sh
+
 # Please install dotfiles
 ```
