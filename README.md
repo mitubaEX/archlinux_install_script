@@ -14,7 +14,7 @@ reboot
 # Please login your root password
 
 # install package
-wget https://raw.githubusercontent.com/mitubaEX/archlinux_install_script/master/setup.sh
+wget https://raw.githubusercontent.com/mitubaEX/archlinux_install_script/master/package.sh
 sh setup.sh
 
 reboot
