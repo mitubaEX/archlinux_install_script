@@ -13,9 +13,11 @@ reboot
 
 # Please login your root password
 
+sudo pacman -S wget
+
 # install package
 wget https://raw.githubusercontent.com/mitubaEX/archlinux_install_script/master/package.sh
-sh setup.sh
+sh package.sh
 
 reboot
 
