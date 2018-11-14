@@ -2,8 +2,6 @@
 set -ux
 loadkeys jp106
 
-wifi-menu
-
 #----------------------
 # partitioning /dev/sda
 # * sda1 : EFI Filesystem : 100MB

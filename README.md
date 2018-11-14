@@ -3,6 +3,8 @@
 ## Install procedure
 
 ```sh
+sudo wifi-menu
+
 # install core
 wget https://raw.githubusercontent.com/mitubaEX/archlinux_install_script/master/setup.sh
 sh setup.sh
