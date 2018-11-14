@@ -1,6 +1,5 @@
 #!/bin/sh
 set -ux
-loadkeys jp106
 
 #----------------------
 # partitioning /dev/sda
@@ -58,9 +57,9 @@ CHROOT="arch-chroot /mnt"
 # chroot->locale
 $CHROOT sed -i -e 's/#ja_JP.UTF-8/ja_JP.UTF-8/' /etc/locale.gen
 $CHROOT sed -i -e 's/#en_US.UTF-8/en_US.UTF-8/' /etc/locale.gen
-echo LANG=ja_JP.UTF-8 > /mnt/etc/locale.conf
+echo LANG=en_US.UTF-8 > /mnt/etc/locale.conf
 $CHROOT locale-gen
-echo KEYMAP=jp106 > /mnt/etc/vconsole.conf
+echo KEYMAP=us > /mnt/etc/vconsole.conf
 
 # chroot->timezone
 $CHROOT ln -s /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
